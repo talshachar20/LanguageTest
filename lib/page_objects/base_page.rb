@@ -29,4 +29,8 @@ class BasePage
   def text(locator)
     @driver.find_element(locator).text
   end
+
+  def quit
+    @driver.close
+  end
 end

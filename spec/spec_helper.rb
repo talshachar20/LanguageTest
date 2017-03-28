@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "ertaltest"
+require "./lib/page_objects/base_page"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -13,6 +13,10 @@ RSpec.describe Ertaltest do
     let(:es_login_element) { 'Entrar' }
     let(:es_login_text) { 'ENTRAR' }
 
+    after(:each) do
+      login_page.quit
+    end
+
     it "login button changes to DE" do
       login_page.visit
       login_page.choose_language('de')
